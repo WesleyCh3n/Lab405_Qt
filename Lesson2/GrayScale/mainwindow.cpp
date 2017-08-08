@@ -48,7 +48,6 @@ void MainWindow::on_pushButton_3_clicked()
 {
     QString ImagePath;
     ImagePath =QFileDialog::getSaveFileName(this, tr("Save File"), "/", tr("PNG(*.png);;JPG(*.jpg)"));
-    ui->label_2->setText(ImagePath);
     *Image=pixmap.toImage();
     Image->save(ImagePath);
 }
